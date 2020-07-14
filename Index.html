@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="http://127.0.0.1:5500/Character1.png" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-container">
+      <img class="top-cloud" src="cloud.png" alt="cloud" />
+      <h1>I'm EJ</h1>
+      <h2>Im am a student and programmer</h2>
+      <img src="land.svg" alt="Montain" />
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img
+          class="profile-image"
+          src="./My Portfolio Website_files/IMG_1912.PNG"
+          alt="profile"
+        />
+        <h1>Hello</h1>
+        <p class="intro">
+          Im 14 year old and i like a lot of stuff!
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>My skills</h2>
+        <div class="skill-row">
+          <img
+            class="programming-image"
+            src="programming.png"
+            alt="programming"
+          />
+          <h3>Design &amp; Developpement</h3>
+          <p>
+            I am learning web developpement
+          </p>
+        </div>
+        <div class="skill-row">
+          <img
+            class="friendship-image"
+            src="./My Portfolio Website_files/friendship.png"
+            alt="friendship"
+          />
+          <h3>Hanging out with my friends</h3>
+          <p>
+            Spending some quality time with my friends is my favorite activity
+            of all time
+          </p>
+          <div class="skill-row">
+            <img
+              src="./My Portfolio Website_files/Hockey-Snap-Shot.jpg"
+              alt="Hockey"
+            />
+            <h3>Playing hockey</h3>
+            <p>Hockey is my favorite sport and I play it competitively</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="contact-section">
+      <div class="contact-me">
+        <h2>Get in touch</h2>
+        <h3>
+          Don't hesitate to contact me if you have any projects or suggestions
+        </h3>
+        <p class="contact-message">
+          Are you interested in a partnership agreement? let's do a venture
+          together!
+        </p>
+        <a class="btn" href="mailto:%20emilej.meouchi@hotmail.com"
+          >Contact me
+        </a>
+      </div>
+      <div class="bottom-container">
+        <p>Go follow my socials!</p>
+        <a href="https://twitter.com/donfoxej">Twitter </a>
+        <a href="https://instagram.com/donfoxej"> Instagram </a>
+        <a href="https://github.com/ej04"> Github </a>
+        <p>© Emile-joseph El-Meouchi 2020</p>
+      </div>
+    </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
